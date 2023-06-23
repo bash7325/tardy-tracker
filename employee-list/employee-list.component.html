@@ -1,0 +1,6 @@
+<div *ngFor="let employee of employees">
+    <h2>{{ employee.name }}</h2>
+    <input type="datetime-local" #timeInput>
+    <button (click)="onAddArrivalTime(employee.name, timeInput.value)">Add Arrival Time</button>
+  </div>
+  
